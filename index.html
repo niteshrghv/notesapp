@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <nav>
+            The Note App
+        </nav>
+    </div>
+    <div id="container">
+        <div id="titlesContainer">
+            <ul><li><h5>Titles</h5></li></ul>
+            <ul id="titles"></ul>
+        </div>
+        <div id="createNote">
+            <!-- innerHTML doesn't work for self closing tags, so here using textarea -->
+            <textarea type="text" id="title" name="title" placeholder="Title"></textarea><br>
+            <div id="timer"></div><br><br>
+            <textarea type="text" id="note" name="note"></textarea><br><br>
+            <button class="btn" id="addBtn" onclick="addNote(); stopTimer()">Add</button>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
+
+

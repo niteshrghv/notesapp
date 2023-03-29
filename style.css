@@ -1,0 +1,100 @@
+*{
+    font-size:16px; 
+    margin:0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#container{
+    display:flex;
+    flex-direction: row;
+}
+
+nav{
+    display:flex; 
+    justify-content:flex-start; 
+    column-gap:20px; 
+    padding:15px; 
+    padding-left: 40px;
+    background:#7718aa; 
+    color:#fff; 
+    list-style: none;
+}
+
+#titlesContainer{
+    display:flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    width:20%;
+    height:100vh;
+}
+
+#createNote{
+    display:flex;
+    flex-direction: column;
+    width:80%;
+    padding:50px;
+}
+
+#title{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+#title[placeholder]{
+    font-weight: bold;
+    font-size:30px;
+}
+
+#note{
+    width: 95%;
+    height:100%;
+    padding:35px 25px;
+    outline: none;
+    border: 0;
+    background-color: #f8f8f8;
+}
+
+.btn{
+  border:0;
+  border-radius:3px;
+  background-color: #7718aa;
+  color:#fff;
+  padding:10px;
+  padding-left:25px;
+  padding-right:25px;
+  width:30%;
+}
+
+.btn{
+    align-self: flex-end;
+}
+
+.btn:hover{
+    background-color: #894fa8;
+}
+
+.liBtn{
+    background-color:#f8f8f8;
+    border:0;
+    width: 100%;
+    text-align: start;
+    cursor:pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+}
+  
+ul li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul li:last-child {
+    border-bottom: none
+}
+
